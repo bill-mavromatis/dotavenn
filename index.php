@@ -40,8 +40,10 @@
 		//}
 		foreach ($WL_array as $item) {
 			for ($row = 0; $row < 5; $row++) {
-				if ($item['account_id']== $users[$row][1])
-				print "with ".$users[$row][0].":".$item['with_win']." wins out of ".$item['with_games']." games. Winrate: ".number_format((float)($item['with_win'])*100/($item['with_games']), 2, '.', '')."</br>";
+				if ($item['account_id']== $users[$row][1]){
+				print "with ".$users[$row][0].":".$item['with_win']." wins out of ".$item['with_games']." games. Winrate: ".number_format((float)($item['with_win'])*100/($item['with_games']), 2, '.', '');
+				print "<font size='1'><i> Last match: ". gmdate("d-m-Y H:i:s", $item['last_played']). "</i></font></br>";
+				}
 			}
 		}
 
