@@ -2,7 +2,7 @@
     $baseUrl = 'https://api.opendota.com/api/players/';
 	
 
-//-----Initial variable definition-----
+//-----Initial variable definition------
 	$users = array
 	(
 		array("DEC1MAL",12142250,"#1008A5"),
